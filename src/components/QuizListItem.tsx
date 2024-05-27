@@ -1,4 +1,7 @@
 import { Quiz } from "../services/quizService";
+import iconPlay from "../../public/assets/icon-play.svg";
+import iconEdit from "../../public/assets/icon-edit.svg";
+import iconDelete from "../../public/assets/icon-delete.svg";
 
 type Props = {
   quiz: Quiz,
@@ -24,7 +27,7 @@ export default function QuizListItem({
           className="p-2 rounded-full hover:bg-gray-400 duration-300"
         >
           <img
-            src="./public/assets/icon-play.svg"
+            src={iconPlay}
             alt="Play icon"
           />
         </button>
@@ -33,7 +36,7 @@ export default function QuizListItem({
           className="p-2 rounded-full hover:bg-gray-400 duration-300"
         >
           <img
-            src="./public/assets/icon-edit.svg"
+            src={iconEdit}
             alt="Edit icon"
           />
         </button>
@@ -42,7 +45,7 @@ export default function QuizListItem({
           className="p-2 rounded-full hover:bg-gray-400 duration-300"
         >
           <img
-            src="./public/assets/icon-delete.svg"
+            src={iconDelete}
             alt="Delete icon"
           />
         </button>

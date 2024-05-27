@@ -4,6 +4,7 @@ import { Quiz, getQuiz } from "../services/quizService";
 import QuizQuestion from "../components/QuizQuestion";
 import QuizResult from "../components/QuizResult";
 import Loader from "../components/Loader";
+import iconHome from "../../public/assets/icon-home.svg";
 
 export default function QuizPage() {
   const { id } = useParams();
@@ -81,7 +82,7 @@ export default function QuizPage() {
     <section className="flex flex-col gap-3 w-1/2">
       <Link to="/" className="flex items-center w-6 h-6 border hover:border-gray-500 rounded-md">
         <img
-          src="./public/assets/icon-home.svg"
+          src={iconHome}
           alt="Back to home page"
           className="rounded-full w-6 h-6 duration-300"
         />

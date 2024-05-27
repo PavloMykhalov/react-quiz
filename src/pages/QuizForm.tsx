@@ -7,6 +7,8 @@ import Loader from '../components/Loader';
 import * as Yup from 'yup';
 import QuizFormHeader from '../components/QuizFormHeader';
 import QuizFormButton from '../components/QuizFormButton';
+import iconClose from "../../public/assets/icon-close.svg";
+import iconAdd from "../../public/assets/icon-add.svg";
 
 export default function QuizForm() {
   const { id } = useParams();
@@ -162,7 +164,7 @@ export default function QuizForm() {
                                     className="absolute right-0 p-2 duration-300"
                                   >
                                     <img
-                                      src="./public/assets/icon-delete.svg"
+                                      src={iconClose}
                                       alt="Delete answer"
                                     />
                                   </button>
@@ -197,7 +199,7 @@ export default function QuizForm() {
                     className="py-2 h-10 border rounded-md hover:border-gray-500 duration-300"
                     title="Add new question"
                     style={{
-                      backgroundImage: `url('./public/assets/icon-add.svg')`,
+                      backgroundImage: `url('${iconAdd}')`,
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'center',
                     }}

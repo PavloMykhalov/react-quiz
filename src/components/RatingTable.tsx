@@ -1,4 +1,7 @@
 import RatingItem from "./RatingItem";
+import iconGold from "../../public/assets/icon-trophy-gold.svg";
+import iconSilver from "../../public/assets/icon-trophy-silver.svg";
+import iconBronze from "../../public/assets/icon-trophy-bronze.svg";
 
 type Props = {
   ratings: {
@@ -8,9 +11,9 @@ type Props = {
 };
 
 const trophyImages = [
-  "./public/assets/icon-trophy-gold.svg",
-  "./public/assets/icon-trophy-silver.svg",
-  "./public/assets/icon-trophy-bronze.svg",
+  iconGold,
+  iconSilver,
+  iconBronze,
 ];
 
 export default function RatingTable({ ratings }: Props) {

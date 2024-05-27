@@ -23,10 +23,13 @@ Clone the repository using the command:
 `git clone https://github.com/your-username/quizzy.git`
 
 Navigate to the project folder:
+
 `cd react-quiz`
 
 Install dependencies using npm:
+
 `npm install`
 
 Start the application:
+
 `npm run dev`

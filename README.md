@@ -19,6 +19,7 @@ The application features the following functionality:
 
 ## Get started
 Clone the repository using the command:
+
 `git clone https://github.com/your-username/quizzy.git`
 
 Navigate to the project folder:

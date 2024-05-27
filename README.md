@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Description
+React Quiz is an application that allows users to create, edit, and delete quizzes. Users can also take quizzes, receive results, and start over. The application features a timer for the quiz duration. Additionally, users can view the ratings of quizzes and search for them by name in the list.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies
+The project is built using the following technologies:
+- Tailwind CSS
+- React
+- TypeScript
 
-Currently, two official plugins are available:
+## Functionality
+The application features the following functionality:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Creation, editing, and deletion of quizzes.
+- Taking quizzes, receiving results, and the ability to start over.
+- Implementation of a timer for quiz duration.
+- Viewing quiz ratings.
+- Searching for quizzes by name in the list.
+- Installation and Running
 
-## Expanding the ESLint configuration
+## Get started
+Clone the repository using the command:
+`git clone https://github.com/your-username/quizzy.git`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Navigate to the project folder:
+`cd react-quiz`
 
-- Configure the top-level `parserOptions` property like this:
+Install dependencies using npm:
+`npm install`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Start the application:
+`npm run dev`

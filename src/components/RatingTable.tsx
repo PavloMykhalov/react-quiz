@@ -8,9 +8,9 @@ type Props = {
 };
 
 const trophyImages = [
-  "/src/assets/icon-trophy-gold.svg",
-  "/src/assets/icon-trophy-silver.svg",
-  "/src/assets/icon-trophy-bronze.svg",
+  "./public/assets/icon-trophy-gold.svg",
+  "./public/assets/icon-trophy-silver.svg",
+  "./public/assets/icon-trophy-bronze.svg",
 ];
 
 export default function RatingTable({ ratings }: Props) {

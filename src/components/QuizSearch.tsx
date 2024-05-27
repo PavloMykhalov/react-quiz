@@ -27,9 +27,9 @@ export default function QuizSearch({ onSearch }: Props) {
         value={query}
         onChange={(e) => handleSearch(e.target.value)}
         style={{
-          backgroundImage: `url('/src/assets/icon-search.svg')`,
-          backgroundPosition: 'right',
+          backgroundImage: `url('./public/assets/icon-search.svg')`,
           backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right',
         }}
       />
       <label

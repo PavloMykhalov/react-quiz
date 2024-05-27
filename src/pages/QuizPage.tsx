@@ -81,7 +81,7 @@ export default function QuizPage() {
     <section className="flex flex-col gap-3 w-1/2">
       <Link to="/" className="flex items-center w-6 h-6 border hover:border-gray-500 rounded-md">
         <img
-          src="/src/assets/icon-home.svg"
+          src="./public/assets/icon-home.svg"
           alt="Back to home page"
           className="rounded-full w-6 h-6 duration-300"
         />

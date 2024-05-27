@@ -24,7 +24,7 @@ export default function QuizListItem({
           className="p-2 rounded-full hover:bg-gray-400 duration-300"
         >
           <img
-            src="src/assets/icon-play.svg"
+            src="./public/assets/icon-play.svg"
             alt="Play icon"
           />
         </button>
@@ -33,7 +33,7 @@ export default function QuizListItem({
           className="p-2 rounded-full hover:bg-gray-400 duration-300"
         >
           <img
-            src="src/assets/icon-edit.svg"
+            src="./public/assets/icon-edit.svg"
             alt="Edit icon"
           />
         </button>
@@ -42,7 +42,7 @@ export default function QuizListItem({
           className="p-2 rounded-full hover:bg-gray-400 duration-300"
         >
           <img
-            src="src/assets/icon-delete.svg"
+            src="./public/assets/icon-delete.svg"
             alt="Delete icon"
           />
         </button>

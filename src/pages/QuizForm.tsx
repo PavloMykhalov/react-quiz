@@ -116,7 +116,7 @@ export default function QuizForm() {
                           className="p-1 rounded-full hover:bg-gray-500 duration-300"
                         >
                           <img
-                            src="/src/assets/icon-close.svg"
+                            src="./public/assets/icon-close.svg"
                             alt="Delete this question"
                             title="Delete this question"
                           />
@@ -162,7 +162,7 @@ export default function QuizForm() {
                                     className="absolute right-0 p-2 duration-300"
                                   >
                                     <img
-                                      src="/src/assets/icon-delete.svg"
+                                      src="./public/assets/icon-delete.svg"
                                       alt="Delete answer"
                                     />
                                   </button>
@@ -197,7 +197,7 @@ export default function QuizForm() {
                     className="py-2 h-10 border rounded-md hover:border-gray-500 duration-300"
                     title="Add new question"
                     style={{
-                      backgroundImage: `url('/src/assets/icon-add.svg')`,
+                      backgroundImage: `url('./public/assets/icon-add.svg')`,
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'center',
                     }}

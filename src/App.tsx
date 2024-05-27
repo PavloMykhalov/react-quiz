@@ -6,7 +6,7 @@ import QuizPage from "./pages/QuizPage";
 export default function App() {
   return (
     <main className="flex justify-center w-full h-full py-9 font-sans">
-      <Router>
+      <Router basename="/react-quiz">
         <Routes>
           <Route path="/" element={<QuizList />} />
           <Route path="/create" element={<QuizForm />} />

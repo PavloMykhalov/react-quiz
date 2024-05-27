@@ -88,14 +88,14 @@ export default function QuizForm() {
           <Form className="flex flex-col gap-3">
             <div className="flex justify-between items-center mb-3">
               <div className="relative w-full mr-2">
-                <Field type="text" name="title" className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500" placeholder="Name your quiz" />
+                <Field type="text" name="title" className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500 duration-300" placeholder="Name your quiz" />
                 <label htmlFor="title" className="absolute left-3 -top-3.5 bg-white px-1 text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:left-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5 peer-focus:left-3 peer-focus:text-gray-600">
                   Name your quiz
                 </label>
                 <ErrorMessage name="title" component="div" className="text-red-500 text-sm" />
               </div>
               <div className="relative w-1/2">
-                <Field type="number" name="timer" className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500" placeholder="Set time to quiz" />
+                <Field type="number" name="timer" className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500 duration-300" placeholder="Set time to quiz" />
                 <label htmlFor="timer" className="absolute left-3 -top-3.5 bg-white px-1 text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:left-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5 peer-focus:left-3 peer-focus:text-gray-600">
                   Enter minutes to pass quiz
                 </label>
@@ -125,14 +125,14 @@ export default function QuizForm() {
                         </button>
                       </div>
                       <div className='relative mt-3'>
-                        <Field type="text" name={`questions.${index}.text`} className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500" placeholder="Question's title" />
+                        <Field type="text" name={`questions.${index}.text`} className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500 duration-300" placeholder="Question's title" />
                         <label htmlFor={`questions.${index}.text`} className="absolute left-3 -top-3.5 bg-white px-1 text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:left-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5 peer-focus:left-3 peer-focus:text-gray-600">
                           Question's title
                         </label>
                         <ErrorMessage name={`questions.${index}.text`} component="div" className="text-red-500 text-sm" />
                       </div>
                       <div className='relative mt-3'>
-                        <Field type="number" name={`questions.${index}.points`} className="border rounded-md p-3 w-1/5 placeholder-transparent peer hover:border-gray-500" placeholder="Points for question" />
+                        <Field type="number" name={`questions.${index}.points`} className="border rounded-md p-3 w-1/5 placeholder-transparent peer hover:border-gray-500 duration-300" placeholder="Points for question" />
                         <label
                           htmlFor={`questions.${index}.points`}
                           className="absolute left-3 -top-3.5 bg-white px-1 text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:left-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5 peer-focus:left-3 peer-focus:text-gray-600"
@@ -155,7 +155,7 @@ export default function QuizForm() {
                                   <Field
                                     type="text"
                                     name={`questions.${index}.answers.${answerIndex}.text`}
-                                    className="h-10 border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500"
+                                    className="h-10 border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500 duration-300"
                                     placeholder="Answer"
                                   />
                                   <button
@@ -183,7 +183,7 @@ export default function QuizForm() {
                         </FieldArray>
                       </div>
                       <div className='relative mt-3'>
-                        <Field as="select" name={`questions.${index}.correctAnswerId`} className="input border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500" placeholder="Correct answer" disabled={!question.answers.length}>
+                        <Field as="select" name={`questions.${index}.correctAnswerId`} className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500 duration-300" placeholder="Correct answer" disabled={!question.answers.length}>
                           <option value="">Select correct answer</option>
                           {question.answers.map((answer: Answer) => (
                             <option key={answer.id} value={answer.id}>{answer.text}</option>

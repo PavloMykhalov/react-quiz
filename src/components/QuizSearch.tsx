@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { debounce } from 'lodash';
-import iconsSearch from "../../public/assets/icon-search.svg";
+import iconSearch from "/assets/icon-search.svg";
 
 type Props = {
   onSearch: (query: string) => void,
@@ -28,7 +28,7 @@ export default function QuizSearch({ onSearch }: Props) {
         value={query}
         onChange={(e) => handleSearch(e.target.value)}
         style={{
-          backgroundImage: `url('${iconsSearch}')`,
+          backgroundImage: `url(${iconSearch})`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'right',
         }}

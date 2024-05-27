@@ -97,7 +97,7 @@ export default function QuizForm() {
               <div className="relative w-1/2">
                 <Field type="number" name="timer" className="border rounded-md p-3 w-full placeholder-transparent peer hover:border-gray-500 duration-300" placeholder="Set time to quiz" />
                 <label htmlFor="timer" className="absolute left-3 -top-3.5 bg-white px-1 text-gray-600 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:left-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5 peer-focus:left-3 peer-focus:text-gray-600">
-                  Enter minutes to pass quiz
+                  Set timer
                 </label>
                 <ErrorMessage name="timer" component="div" className="text-red-500 text-sm" />
               </div>

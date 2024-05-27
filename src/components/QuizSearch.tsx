@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { debounce } from 'lodash';
 
 type Props = {
   onSearch: (query: string) => void,
@@ -7,8 +8,13 @@ type Props = {
 export default function QuizSearch({ onSearch }: Props) {
   const [query, setQuery] = useState('');
 
-  const handleSearch = async () => {
-    onSearch(query);
+  const handleDebouncedSearch = debounce((value: string) => {
+    onSearch(value);
+  }, 1000);
+
+  const handleSearch = (value: string) => {
+    setQuery(value);
+    handleDebouncedSearch(value);
   }
 
   return (
@@ -18,12 +24,8 @@ export default function QuizSearch({ onSearch }: Props) {
         className="px-4 border rounded-md h-12 w-full hover:border-gray-500 duration-300 placeholder-transparent peer"
         id="search"
         placeholder="Search for quizzes"
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter') {
-            handleSearch();
-          }
-        }}
+        value={query}
+        onChange={(e) => handleSearch(e.target.value)}
         style={{
           backgroundImage: `url('/src/assets/icon-search.svg')`,
           backgroundPosition: 'right',

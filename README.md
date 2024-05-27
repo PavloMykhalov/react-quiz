@@ -33,3 +33,6 @@ Install dependencies using npm:
 Start the application:
 
 `npm run dev`
+
+## Review
+You can see app by the [link](https://pavlomykhalov.github.io/react-quiz/)
